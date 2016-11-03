@@ -1,3 +1,5 @@
 export MainContainer from './Main/MainContainer'
 export HomeContainer from './Home/HomeContainer'
 export AuthenticateContainer from './Authenticate/AuthenticateContainer'
+export DashboardContainer from './Dashboard/DashboardContainer'
+export LogoutContainer from './Logout/LogoutContainer'
