@@ -1,9 +1,13 @@
 import React from 'react'
+import { Navigation } from 'components'
 
 const MainContainer = React.createClass({
   render () {
     return (
-      <h1>Heyyy from Boilerplate!!</h1>
+      <div>
+        <Navigation isAuthed={true}/>
+        {this.props.children}
+      </div>
     )
   }
 })
