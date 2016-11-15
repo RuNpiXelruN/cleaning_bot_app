@@ -11,7 +11,7 @@ const MainContainer = React.createClass({
     firebaseAuth().onAuthStateChanged((user) => {
       if (user) {
         const userData = user.providerData[0]
-        const userInfo = formatUserData(userData.displayName, userData.photoURL, user.uid )
+        const userInfo = formatUserData(userData.displayName, userData.photoURL, user.uid)
         this.props.authUser(user.uid)
         this.props.fetchingUserSuccess(user.uid, userInfo, Date.now())
         if (this.props.location.pathname === '/') {
@@ -38,17 +38,17 @@ MainContainer.propTypes = {
   isAuthed: PropTypes.bool.isRequired,
   authUser: PropTypes.func.isRequired,
   fetchingUserSuccess: PropTypes.func.isRequired,
-  removeFetchingUser: PropTypes.func.isRequired,
+  removeFetchingUser: PropTypes.func.isRequired
 }
 
 MainContainer.contextTypes = {
-  router: PropTypes.object.isRequired,
+  router: PropTypes.object.isRequired
 }
 
 function mapStateToProps ({users}) {
   return {
     isAuthed: users.isAuthed,
-    isFetching: users.isFetching,
+    isFetching: users.isFetching
   }
 }
 

@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 import { Home } from 'components'
 
-const HomeContainer = React.createClass ({
+const HomeContainer = React.createClass({
   render () {
     return (
       <Home />

@@ -32,5 +32,5 @@ export default function Navigation ({isAuthed}) {
 }
 
 Navigation.propTypes = NavLinks.propTypes = ActionLinks.propTypes = {
-  isAuthed: PropTypes.bool.isRequired,
+  isAuthed: PropTypes.bool.isRequired
 }

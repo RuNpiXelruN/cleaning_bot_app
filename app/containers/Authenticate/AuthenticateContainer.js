@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import * as userActions from 'redux/modules/users'
 
-const AuthenticateContainer = React.createClass ({
+const AuthenticateContainer = React.createClass({
   handleAuth (e) {
     e.preventDefault()
     this.props.fetchAndHandleAuthedUser()
@@ -26,17 +26,17 @@ const AuthenticateContainer = React.createClass ({
 AuthenticateContainer.propTypes = {
   isFetching: PropTypes.bool.isRequired,
   error: PropTypes.string.isRequired,
-  fetchAndHandleAuthedUser: PropTypes.func.isRequired,
+  fetchAndHandleAuthedUser: PropTypes.func.isRequired
 }
 
 AuthenticateContainer.contextTypes = {
-  router: PropTypes.object.isRequired,
+  router: PropTypes.object.isRequired
 }
 
 function mapStateToProps ({users}) {
   return {
     isFetching: users.isFetching,
-    error: users.error,
+    error: users.error
   }
 }
 

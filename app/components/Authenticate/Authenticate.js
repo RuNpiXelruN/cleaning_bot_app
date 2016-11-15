@@ -4,8 +4,8 @@ import { FacebookAuthButton } from 'components'
 export default function Authenticate ({isFetching, error, onAuth}) {
   return (
     <div>
-      <h1>{'Mentally Cleanliness'}</h1>
-      <p>{'Get your clean on...'}</p>
+      <h1>{'Welcome to Mentally Cleanly'}</h1>
+      <p>{'Get shit done...'}</p>
       <FacebookAuthButton isFetching={isFetching} onAuth={onAuth} />
       {error ? <p>{error}</p> : null}
     </div>
@@ -15,5 +15,5 @@ export default function Authenticate ({isFetching, error, onAuth}) {
 Authenticate.propTypes = {
   isFetching: PropTypes.bool.isRequired,
   error: PropTypes.string.isRequired,
-  onAuth: PropTypes.func.isRequired,
+  onAuth: PropTypes.func.isRequired
 }

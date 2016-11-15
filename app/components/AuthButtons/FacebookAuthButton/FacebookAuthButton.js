@@ -10,5 +10,5 @@ export default function FacebookAuthButton ({isFetching, onAuth}) {
 
 FacebookAuthButton.propTypes = {
   isFetching: PropTypes.bool.isRequired,
-  onAuth: PropTypes.func.isRequired,
+  onAuth: PropTypes.func.isRequired
 }

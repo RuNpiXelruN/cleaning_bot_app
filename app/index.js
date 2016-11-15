@@ -25,7 +25,7 @@ function checkAuth (nextState, replace) {
       replace('/dashboard')
     }
   } else {
-    if (isAuthed !== true ) {
+    if (isAuthed !== true) {
       replace('/auth')
     }
   }
