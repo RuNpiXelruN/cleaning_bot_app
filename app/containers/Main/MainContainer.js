@@ -5,6 +5,7 @@ import { bindActionCreators } from 'redux'
 import * as userActions from 'redux/modules/users'
 import { formatUserData } from 'helpers/utils'
 import { firebaseAuth } from 'config/constants'
+// import { fetchUsers } from 'helpers/api'
 
 const MainContainer = React.createClass({
   componentDidMount () {
@@ -28,6 +29,7 @@ const MainContainer = React.createClass({
     return this.props.isFetching === true
       ? <div>{'Loading......'}</div>
       : <div>
+          {/*<button onClick={() => fetchUsers()}>Get Users Data</button>*/}
           <Navigation isAuthed={this.props.isAuthed}/>
           {this.props.children}
         </div>

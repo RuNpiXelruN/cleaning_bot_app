@@ -1,10 +1,11 @@
 import React, { PropTypes } from 'react'
-import { Dashboard } from 'components'
+import { UsersContainer } from 'containers'
+// import { Dashboard } from 'components'
 
 const DashboardContainer = React.createClass({
   render () {
     return (
-      <Dashboard />
+      <UsersContainer />
     )
   }
 })
